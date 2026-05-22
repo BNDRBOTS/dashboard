@@ -3,169 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BNDR | Premium AI Solutions</title>
-    <!-- GOOGLE ANALYTICS TAG START -->
-    <!-- [PASTE YOUR GA GTAG.JS HERE] -->
-    <!-- GOOGLE ANALYTICS TAG END -->
+    <title>BNDR | INTELLIGENCE COMMAND</title>
+    <!-- [GOOGLE ANALYTICS 4 - PASTE HERE] -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bndr-theme">
-    <div class="bg-fx">
-        <div class="laser streak-plasma"></div>
-        <div class="laser streak-magenta"></div>
-        <div class="noise-overlay"></div>
-    </div>
+<body class="bndr-os">
+    <div class="void-bg"></div>
+    <div class="scanline"></div>
 
-    <nav class="glass-nav">
-        <div class="nav-container">
-            <img src="https://www.dropbox.com/scl/fi/arq5ahrf3m1m9060bes5h/BNDR_Upscaled_26_Blk_Wht-Background-Removed.png?rlkey=3iwsya8nh4igg9ql4acm0xbe2&st=fgqe6935&raw=1" alt="BNDR Logo" class="nav-logo">
-            <div class="nav-links">
-                <a href="#services" class="pill-btn">Services</a>
-                <a href="#portfolio" class="pill-btn">Portfolio</a>
-                <a href="#payment" class="pill-btn accent-plasma">Work with BNDR</a>
-            </div>
+    <!-- SIDEBAR: THE NAVIGATOR -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <img src="https://www.dropbox.com/scl/fi/arq5ahrf3m1m9060bes5h/BNDR_Upscaled_26_Blk_Wht-Background-Removed.png?rlkey=3iwsya8nh4igg9ql4acm0xbe2&st=fgqe6935&raw=1" alt="BNDR">
         </div>
-    </nav>
+        <nav class="side-nav">
+            <button class="nav-item active" data-view="intel">Intelligence</button>
+            <button class="nav-item" data-view="clients">Client Analytics</button>
+            <button class="nav-item" data-view="railway">Railway Ops</button>
+            <button class="nav-item" data-view="payments">Revenue Matrix</button>
+        </nav>
+        <div class="sidebar-status">
+            <div class="status-indicator online"></div>
+            <span>BNDR NODE 01: ACTIVE</span>
+        </div>
+    </aside>
 
-    <main>
-        <!-- HERO -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="glitch-text">BNDR<span>LLC</span></h1>
-                <p class="subtitle">Bespoke AI Engineering & Digital Architecture</p>
-                <div class="hero-cta">
-                    <a href="https://book.stripe.com/14A4gz4VZdAKaccbeU0oM0i" class="pill-btn large glow-plasma">Book AI Consulting — $99</a>
-                    <a href="#services" class="pill-btn large secondary">View Services</a>
-                </div>
+    <main class="viewport">
+        <!-- TOPBAR: AI ORCHESTRATOR -->
+        <header class="topbar">
+            <div class="model-selector">
+                <span class="selector-label">ACTIVE REASONING ENGINE:</span>
+                <select id="ai-engine">
+                    <option value="deepseek-v4">DeepSeek V4 (Logic Mastery)</option>
+                    <option value="claude-3-7">Claude 3.7 Sonnet (Nuance)</option>
+                    <option value="gpt-5">OpenAI GPT-5 (Omni)</option>
+                </select>
             </div>
-        </section>
+            <div class="topbar-actions">
+                <a href="https://railway.app/dashboard" target="_blank" class="pill-btn small">Railway Dashboard ↗</a>
+            </div>
+        </header>
 
-        <!-- DASHBOARD METRICS -->
-        <section class="dashboard-preview">
-            <div class="metrics-grid">
-                <div class="glass-card metric-card">
-                    <div class="shine"></div>
-                    <span class="label">Project Velocity</span>
-                    <h2 class="value">99.9%</h2>
-                    <div class="trend positive">FLUID OUTPUT</div>
-                </div>
-                <div class="glass-card metric-card">
-                    <div class="shine"></div>
-                    <span class="label">Active Neural Nodes</span>
-                    <h2 class="value">2.4k</h2>
-                    <div class="trend" style="color: var(--magenta);">OVAL CLUSTER</div>
-                </div>
-                <div class="glass-card metric-card">
-                    <div class="shine"></div>
-                    <span class="label">System Uptime</span>
-                    <h2 class="value">∞</h2>
-                    <div class="trend positive">STABLE VIBE</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section id="services" class="services">
-            <h2 class="section-title">Tiered Solutions</h2>
-            <div class="services-grid">
-                <div class="glass-panel service-card">
-                    <div class="shine"></div>
-                    <h3>One-Page Lander™</h3>
-                    <p>High-conversion, minimalist architecture for rapid growth.</p>
-                    <div class="price">$1,500.00</div>
-                    <a href="https://buy.stripe.com/8x2cN5fADeEOfww0Ag0oM0d" class="pill-btn wide">Initialize Build</a>
-                </div>
-                <div class="glass-panel service-card featured">
-                    <div class="shine"></div>
-                    <div class="badge">Most Popular</div>
-                    <h3>Three-Page Custom™</h3>
-                    <p>Standardized premium depth for professional brands.</p>
-                    <div class="price">$2,400.00</div>
-                    <a href="https://book.stripe.com/14AcN5corbsCdoo6YE0oM0g" class="pill-btn wide glow-plasma">Initialize Build</a>
-                </div>
-                <div class="glass-panel service-card">
-                    <div class="shine"></div>
-                    <h3>Small Business Site</h3>
-                    <p>Comprehensive ecosystem for complex operations.</p>
-                    <div class="price">$3,200.00</div>
-                    <a href="https://book.stripe.com/3cI5kDgEHaoy9884Qw0oM0h" class="pill-btn wide">Initialize Build</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- PORTFOLIO PREVIEW -->
-        <section id="portfolio" class="portfolio">
-            <h2 class="section-title">Proof of Concept</h2>
-            <div class="portfolio-reel">
-                <a href="https://bndrbots.github.io/liquidglass/" class="portfolio-item glass-card">Liquid Glass</a>
-                <a href="https://bndrbots.github.io/ShadowGraffiti/" class="portfolio-item glass-card">Shadow Graffiti</a>
-                <a href="https://bndrbots.github.io/forma/" class="portfolio-item glass-card">Forma SaaS</a>
-                <a href="https://bndrbots.github.io/oilflux/" class="portfolio-item glass-card">Oil Flux</a>
-                <a href="https://bndrbots.github.io/heavyink/" class="portfolio-item glass-card">Heavy Ink</a>
-                <a href="https://bndrbots.github.io/zen/" class="portfolio-item glass-card">Zen 3D</a>
-            </div>
-            <div class="center-btn">
-                <a href="https://bndrbots.github.io/portfolio/" class="pill-btn">View Full Archive</a>
-            </div>
-        </section>
-
-        <!-- PAYMENT / DONATE -->
-        <section id="payment" class="payment-block">
-            <div class="glass-panel">
-                <div class="shine"></div>
-                <h2 class="section-title">Transaction Matrix</h2>
-                <div class="payment-grid">
-                    <div class="qr-card">
-                        <img src="https://www.dropbox.com/scl/fi/su7zamnwpxbonalhx7hul/CashAppQR.jpg?rlkey=beeyjglreszlalevo62xbvps9&st=y2mdi9s0&dl=1" alt="CashApp QR">
-                        <a href="https://cash.app/$scottscottbobot" class="pill-btn small">CashApp $scottscottbobot</a>
+        <!-- CONTENT VIEWS -->
+        <section id="view-intel" class="view active">
+            <div class="grid-container">
+                <div class="glass-panel wide-card ai-terminal">
+                    <div class="panel-header">
+                        <h3>BNDR AI Reasoning Terminal</h3>
+                        <span class="badge-plasma">BETA 2026.05</span>
                     </div>
-                    <div class="qr-card">
-                        <img src="https://www.dropbox.com/scl/fi/vul3snmwlc8h64rmyo75z/mason-scottqr.png?rlkey=9wf9ioxmbyzs0msutih7vlkxs&st=tnks0rvp&dl=1" alt="Stripe QR">
-                        <a href="https://donate.stripe.com/14A4gz4VZ40a0BCaaQ0oM0j" class="pill-btn small">Support Mason + Scott</a>
+                    <div class="terminal-output" id="terminal-out">
+                        <p class="bot-msg">System initialized. Awaiting logic prompt for BNDR Intelligence.</p>
                     </div>
-                    <div class="qr-card">
-                        <img src="https://www.dropbox.com/scl/fi/v389omenfgfm00pdbnsnq/venmoqr.jpg?rlkey=vquw54599lzd8ayrw3rpao38t&st=tzyxj2cg&raw=1" alt="Venmo QR">
-                        <a href="https://venmo.com/u/mog86dg" class="pill-btn small">Venmo @mog86dg</a>
+                    <div class="terminal-input-wrap">
+                        <input type="text" id="ai-input" placeholder="Ask BNDR Intelligence (DeepSeek V4 reasoning enabled)...">
+                        <button id="send-btn" class="pill-btn accent-plasma">EXECUTE</button>
+                    </div>
+                </div>
+
+                <div class="glass-panel info-card">
+                    <h3>Quick Intel</h3>
+                    <div class="intel-item">
+                        <span class="label">Traffic Hotspot</span>
+                        <span class="value">LiquidGlass.io</span>
+                    </div>
+                    <div class="intel-item">
+                        <span class="label">Conversion Velocity</span>
+                        <span class="value" style="color:var(--plasma)">+14.2%</span>
+                    </div>
+                    <div class="intel-item">
+                        <span class="label">Client Latency</span>
+                        <span class="value">24ms</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- GA DEPLOYMENT BLOCK -->
-        <section class="ga-deploy">
-            <div class="glass-panel ga-block">
-                <h3>Google Analytics Deployment</h3>
-                <p>1. Open <code>index.html</code>.<br>
-                   2. Replace <code>&lt;!-- [PASTE YOUR GA GTAG.JS HERE] --&gt;</code> (Line 6) with your Google tag snippet.<br>
-                   3. <strong>Save & Upload</strong> to GitHub Pages or Railway.</p>
-                <div class="code-box" id="ga-code">
-                    <code>&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"&gt;&lt;/script&gt;</code>
+        <!-- CLIENT ANALYTICS VIEW -->
+        <section id="view-clients" class="view">
+            <div class="section-header">
+                <h2>Client Behavioral Insights</h2>
+                <p>Human-readable data translation from your site traffic.</p>
+            </div>
+            <div class="grid-container">
+                <div class="glass-panel">
+                    <h3>Active Client Sessions</h3>
+                    <div class="chart-mock">
+                        <!-- REAL INTEGRATION: Hook your Google Analytics API or Supabase here -->
+                        <div class="bar-plasma" style="height: 60%"></div>
+                        <div class="bar-plasma" style="height: 85%"></div>
+                        <div class="bar-plasma" style="height: 40%"></div>
+                        <div class="bar-plasma" style="height: 95%"></div>
+                        <div class="bar-plasma" style="height: 70%"></div>
+                    </div>
+                    <p class="non-jargon">"People are spending more time on your 3-Page Custom layouts today."</p>
+                </div>
+                <div class="glass-panel">
+                    <h3>Direct Lead Intel</h3>
+                    <div class="lead-list">
+                        <div class="lead-item">
+                            <span>Anonymous User</span>
+                            <span class="badge">Viewed: Portfolio</span>
+                        </div>
+                        <div class="lead-item">
+                            <span>Anonymous User</span>
+                            <span class="badge accent-magenta">Clicked: $99 Consulting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RAILWAY VIEW -->
+        <section id="view-railway" class="view">
+            <div class="glass-panel railway-card">
+                <h3>Railway Deployment Status</h3>
+                <div class="deployment-meta">
+                    <div class="meta-item">
+                        <label>Production URL:</label>
+                        <a href="https://bndrllc.com" target="_blank">bndrllc.com</a>
+                    </div>
+                    <div class="meta-item">
+                        <label>Last Build:</label>
+                        <span>22 May 2026 - 09:42 UTC</span>
+                    </div>
+                    <div class="meta-item">
+                        <label>Backend Engine:</label>
+                        <span class="plasma-text">Node.js + Supabase</span>
+                    </div>
+                </div>
+                <div class="log-stream" id="railway-logs">
+                    <p>> Fetching build logs...</p>
+                    <p>> Deployment successful.</p>
+                    <p>> Listening on port 3000.</p>
+                </div>
+                <a href="https://railway.app" target="_blank" class="pill-btn wide">Open Full Management Console</a>
+            </div>
+        </section>
+
+        <!-- PAYMENTS VIEW -->
+        <section id="view-payments" class="view">
+            <div class="grid-container">
+                <div class="glass-panel">
+                    <h3>Revenue Matrix</h3>
+                    <div class="revenue-grid">
+                        <div class="rev-card">
+                            <span class="label">Gross Revenue</span>
+                            <span class="value">$12,450</span>
+                        </div>
+                        <div class="rev-card">
+                            <span class="label">Pending (Stripe)</span>
+                            <span class="value">$2,100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-panel qr-links">
+                    <h3>Quick Payment Links</h3>
+                    <div class="pill-group">
+                        <a href="https://cash.app/$scottscottbobot" class="pill-btn">CashApp</a>
+                        <a href="https://venmo.com/u/mog86dg" class="pill-btn">Venmo</a>
+                        <a href="https://donate.stripe.com/14A4gz4VZ40a0BCaaQ0oM0j" class="pill-btn accent-magenta">Donate Support</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="glass-footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <img src="https://www.dropbox.com/scl/fi/arq5ahrf3m1m9060bes5h/BNDR_Upscaled_26_Blk_Wht-Background-Removed.png?rlkey=3iwsya8nh4igg9ql4acm0xbe2&st=fgqe6935&raw=1" alt="BNDR">
-                <p>© 2026 BNDR LLC. All Rights Reserved.</p>
-            </div>
-            <div class="footer-links">
-                <a href="https://www.dropbox.com/scl/fi/um6xi0vfzj0w03kgxtrq2/privacy.html?rlkey=6ylhioa276mrynqylvxc19u7v&e=1&st=dgn3s7uz&dl=0">Privacy Policy</a>
-                <a href="https://www.dropbox.com/scl/fi/kojw24oymxcuku5r2nupj/terms.html?rlkey=zlta95mcdxzqd9qjkbk38alhl&e=1&st=af3kun5i&dl=0">Terms of Service</a>
-                <a href="/cdn-cgi/l/email-protection#1d7f73796f33717c7f6e5d7a707c7471337e7270">Contact</a>
-            </div>
-            <div class="footer-socials">
-                <a href="https://github.com/BNDRBOTS">GitHub</a>
-                <a href="https://www.linkedin.com/in/bndrtech/">LinkedIn</a>
-                <a href="https://substack.com/@bndrllc">Substack</a>
-                <a href="https://buymeacoffee.com/bndr">Coffee</a>
-            </div>
-        </div>
-    </footer>
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ffe0df8bff18d44',t:'MTc3OTQ3NjMzMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ffe2f3efead819b',t:'MTc3OTQ3NzY5Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
